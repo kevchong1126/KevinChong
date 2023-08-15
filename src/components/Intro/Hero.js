@@ -74,7 +74,7 @@ const Hero = () => {
                   <h1 className={styles.title} ref={title2}>Developer</h1>
                 </div>
                 <div ref={quote}>
-                  <p className={styles.quote} >"Developing the future, one website at a time."</p>
+                  <p className={styles.quote} >"Developing the future, a website at a time."</p>
                 </div>
                 
             </div>
