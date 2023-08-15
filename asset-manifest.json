@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.242b6c3d.css",
+    "main.js": "/static/js/main.5d67c9e5.js",
+    "static/media/meme.gif": "/static/media/meme.296328c44e9f651146cb.gif",
+    "static/media/redsquare.png": "/static/media/redsquare.a77aceda6cf80f8cc930.png",
+    "static/media/laraya.png": "/static/media/laraya.a3f124ece5c867058f62.png",
+    "static/media/bonsai.png": "/static/media/bonsai.74864eb7a83a7efe8dad.png",
+    "static/media/leetcode.png": "/static/media/leetcode.8b3f1dd67fb647228642.png",
+    "static/media/imageeditor.png": "/static/media/imageeditor.1c1a44360c44b0630c9a.png",
+    "static/media/redsquaremobile.png": "/static/media/redsquaremobile.ef7aa58764e8ff583d02.png",
+    "static/media/bonsaimobile.png": "/static/media/bonsaimobile.1400b865a558437104f7.png",
+    "static/media/larayamobile.png": "/static/media/larayamobile.d739df830497dee53968.png",
+    "index.html": "/index.html",
+    "main.242b6c3d.css.map": "/static/css/main.242b6c3d.css.map",
+    "main.5d67c9e5.js.map": "/static/js/main.5d67c9e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.242b6c3d.css",
+    "static/js/main.5d67c9e5.js"
+  ]
+}
