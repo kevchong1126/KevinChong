@@ -1,0 +1,32 @@
+@use '../../scss/mixins' as *;
+@use '../../scss/variables' as *;
+
+.container{
+    width: 100%;
+
+    .content{
+        @include content;
+        width: 90%;
+        text-align: center;
+        padding-block: $pd-sm-4;
+        overflow: hidden;
+        position: relative;
+
+        .name{
+            font-size: $txt-nm-6;
+            color: black;
+        }
+
+        .line{
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            max-width: 1000px;
+            background-color: $green-1;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+

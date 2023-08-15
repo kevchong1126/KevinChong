@@ -1,0 +1,109 @@
+@use '../../scss/mixins' as *;
+@use '../../scss/variables' as *;
+@use '../../scss/breakpoints' as *;
+
+.container{
+    @include container;
+    border-bottom: 1px solid black;
+    
+    .content{
+        @include content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: $pd-l-7;
+
+        @include sm-screen{
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+}
+
+.left{
+
+    @include sm-screen{
+        order: 2;
+    }
+
+    .info{
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+        letter-spacing: 1px;
+        font-weight: 500;
+
+        @include sm-screen{
+            writing-mode: initial;
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include sm-screen{
+        order: 1;
+    }
+
+    .titleContainer{
+        overflow: hidden;
+
+        .title{
+            font-size: $txt-rsp-3;
+            letter-spacing: 2px;
+            margin-bottom: $mg-sm-1;
+
+            @include sm-screen{
+                font-size: $txt-rsp-4;
+            }
+        }
+    }
+    
+    .quote{
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+}
+
+.right{
+
+    @include sm-screen{
+        order: 3;
+    }
+
+    .socialContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include sm-screen{
+            flex-direction: row;
+        }
+        
+        .socialIcon{
+            display:block;
+            cursor: pointer;
+
+            .icon{
+                font-size: $txt-nm-5;
+                display: block;
+                cursor: pointer;
+            }
+
+            a{
+                @include centerFlex;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
