@@ -17,7 +17,11 @@ const Header = () => {
                 end: `+=${title.current.offsetHeight}}`,
                 pin: true,
                 pinSpacing: false,
+<<<<<<< HEAD
                 scrub: 1
+=======
+                scrub: 4
+>>>>>>> 4817f5e401c9232382827a31af89138e18f95283
             }
         })
     }, []);
