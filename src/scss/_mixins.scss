@@ -1,0 +1,41 @@
+@use './variables' as *;
+
+@mixin container{
+    width: 100%;
+    height: 100%;
+}
+
+@mixin content{
+    width: 90%;
+    height: 100%;
+    max-width: 1600px;
+    margin-inline: auto;
+}
+
+@mixin centerAbsolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centerFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pseudo{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $gray-6;
+}
+
+@mixin transition($property: all, $duration: 0.3s){
+    transition: $property $duration ease-in-out;
+}
+

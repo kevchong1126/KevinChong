@@ -1,0 +1,135 @@
+@use '../../scss/mixins' as *;
+@use '../../scss/variables' as *;
+@use '../../scss/breakpoints' as *;
+
+
+.page2{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    padding-left: $pd-nm-4;
+
+    @include breakpoint(720px){
+        height: 100%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .left{
+        width: 50%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: -1;
+
+        @include lg-screen{
+            width: 80%;
+        }
+        
+        .meme{
+            height: 100%;
+            width: 100%;
+            max-width: 900px;
+            max-height: 800px;
+            object-fit: cover;
+            object-position: 30% 0%;
+
+        }
+    }
+
+    .right{
+        width: 100%;
+        height: 80%;
+        display: flex;
+
+        @include breakpoint(720px){
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            height: 100%;
+        }
+        
+        .textContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            height: 100%;
+            max-width: 500px;
+            gap: $pd-nm-2;
+
+            @include lg-screen{
+                width: 80%;
+            }
+
+            .header{
+                color: $gray-1;
+                font-size: $txt-l-2;
+                font-family: 'Playfair Display', serif;
+                max-width: 80%;
+                text-transform: uppercase;
+
+                @include lg-screen{
+                    font-size: $txt-nm-6;
+                } 
+
+                @include nm-screen{
+                    font-size: $txt-nm-5;
+                }
+
+                @include breakpoint(842px){
+                    font-size: $txt-nm-2;
+                }
+                
+                @include minbreakpoint{
+                    font-size: $txt-l-4;
+                }
+            }
+
+            .description{
+                color: $gray-1;
+                font-family: 'Josefin Slab', serif;
+                font-weight: 700;
+                max-width: 80%;
+
+                @include nm-screen{
+                    font-size: $txt-sm-4;
+                }
+
+                @include sm-screen{
+                    font-size: $txt-sm-4;
+                }
+
+                @include minbreakpoint{
+                    font-size: $txt-nm-3;
+                }
+
+                
+            }
+        }
+        
+        .leetcodeContainer{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            align-self: center;
+            z-index: -1;
+            @include centerFlex;
+
+            .leetcode{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                max-width: 1500px;
+                object-fit: cover;
+
+                @include breakpoint(720px){
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

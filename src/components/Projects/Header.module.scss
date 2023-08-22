@@ -1,0 +1,19 @@
+@use '../../scss/mixins' as *;
+@use '../../scss/variables' as *;
+@use '../../scss/breakpoints' as *;
+.container{
+    position: relative;
+    width: 90%;
+    max-width: 1600px;
+    margin-inline: auto;
+    z-index: -1;
+
+    @include breakpoint(720px){
+        margin-block: $mg-l-4;
+    }
+    
+    h1{
+        font-weight: 300;
+        font-size: $txt-rsp-5;
+    }
+}

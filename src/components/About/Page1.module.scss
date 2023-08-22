@@ -1,0 +1,64 @@
+@use '../../scss/mixins' as *;
+@use '../../scss/variables' as *;
+@use '../../scss/breakpoints' as *;
+
+.page1{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: $txt-rsp-2;
+    padding-left: $pd-nm-4;
+    
+    @include breakpoint(720px){
+        height: 100%;
+    }
+    
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+
+        .text{
+            color: $gray-1;
+            font-style: italic;
+
+            .link{
+                display: inline-block;
+                border-bottom: 3px solid $gray-7;
+                @include transition($duration: 0.2s);
+
+                &:hover{
+                    color: $gray-1;
+                    border-color: $gray-1;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: $txt-rsp-2; 
+        padding: 0 $pd-nm-1 $pd-nm-4 0 ;
+
+        .text{
+            color: $gray-1;
+            font-style: italic;
+
+            .arrow{
+                color: $gray-1;
+                
+                @include breakpoint(720px){
+                    display: none;
+                }
+            }
+        }
+    }
+}
