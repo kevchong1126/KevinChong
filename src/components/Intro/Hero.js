@@ -8,13 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const fadeUp = (ref, scroll) => {
   gsap.to(ref, {
-    yPercent: -(scroll),
+      yPercent: -20,
       opacity: 0,
       scrollTrigger:{
         trigger: ref,
         start: '-25% 30%',
         end: 'top 30%',
-        scrub: 2
+        scrub: 1
     }
   })
 }
