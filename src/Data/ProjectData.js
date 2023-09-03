@@ -17,7 +17,7 @@ export const descriptions = [
 ];
 
 export const demo = [
-'https://dealsfinder-frontend.onrender.com/houses/sydney-nsw-2000',
+'https://dealsfinder-frontend.onrender.com',
 'https://kevchong1126.github.io/laraya/',
 'https://kevchong1126.github.io/image-editor/',
 'https://kevchong1126.github.io/bonsai/',
