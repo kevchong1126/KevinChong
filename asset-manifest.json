@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kevinchong/static/css/main.242b6c3d.css",
-    "main.js": "/kevinchong/static/js/main.586e3682.js",
+    "main.css": "/kevinchong/static/css/main.ea3a30fe.css",
+    "main.js": "/kevinchong/static/js/main.9ccd8e37.js",
     "static/media/meme.gif": "/kevinchong/static/media/meme.296328c44e9f651146cb.gif",
     "static/media/dealsfinder.png": "/kevinchong/static/media/dealsfinder.89a1eb1a1df09e1528fc.png",
     "static/media/laraya.png": "/kevinchong/static/media/laraya.a3f124ece5c867058f62.png",
@@ -11,11 +11,11 @@
     "static/media/bonsaimobile.png": "/kevinchong/static/media/bonsaimobile.1400b865a558437104f7.png",
     "static/media/larayamobile.png": "/kevinchong/static/media/larayamobile.d739df830497dee53968.png",
     "index.html": "/kevinchong/index.html",
-    "main.242b6c3d.css.map": "/kevinchong/static/css/main.242b6c3d.css.map",
-    "main.586e3682.js.map": "/kevinchong/static/js/main.586e3682.js.map"
+    "main.ea3a30fe.css.map": "/kevinchong/static/css/main.ea3a30fe.css.map",
+    "main.9ccd8e37.js.map": "/kevinchong/static/js/main.9ccd8e37.js.map"
   },
   "entrypoints": [
-    "static/css/main.242b6c3d.css",
-    "static/js/main.586e3682.js"
+    "static/css/main.ea3a30fe.css",
+    "static/js/main.9ccd8e37.js"
   ]
 }
